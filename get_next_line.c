@@ -6,7 +6,7 @@
 /*   By: shikim <shikim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 14:57:01 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/21 19:44:58 by shikim           ###   ########.fr       */
+/*   Updated: 2023/04/21 19:59:38 by shikim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,27 +104,3 @@ char	*get_next_line(int fd)
 		free_remain(&remain);
 	return (line);
 }
-
-// int	main(void)
-// {
-// 	char	*line;
-// 	ssize_t	fd;
-
-// 	fd = open("42text", O_RDONLY);
-// 	if (fd < 0)
-// 	{
-// 		printf("fd < 0\n");
-// 		return (0);
-// 	}
-// 	line = get_next_line(fd);
-// 	while (line != NULL)
-// 	{
-// 		printf("%s", line);
-// 		if (line != NULL)
-// 			free(line);
-// 		line = NULL;
-// 		line = get_next_line(fd);
-// 	}
-// 	printf("\n=== End of file ===\n");
-// 	return (0);
-// }
